@@ -8,6 +8,78 @@
   <body>
     <div id="root">
       <h1>Hola mundo!</h1>
+
+
+      
+<!-------------Pantalla 1---------------------------->
+<div id="pantalla-bienvenida" class="pantalla">
+  <h1>Bienvenida,</h1>
+  
+  <p>El cifrado César es uno de los primeros métodos de cifrado conocidos históricamente. Julio César lo usó para enviar órdenes a sus generales en los campos de batalla. Consistía en escribir el mensaje con un alfabeto que estaba formado por las letras del alfabeto normal desplazadas tres posiciones a la derecha. </p>
+  
+  <p>Para empezar, selecciona si deseas cifrar o descifrar un mensaje.</p>
+  
+  <button class="boton" onclick="controladorPantallas('pantalla-2')">Cifrar mensaje</button>
+  <button class="boton" onclick="controladorPantallas('pantalla-3')">Descifrar mensaje</button>
+  </div>
+  
+  
+  <!-------------Pantalla 2---------------------------->
+  
+  <div id="pantalla-2" class="pantalla">
+  
+  <form>
+    Selecciona el desplazamiento para cifrar tu mensaje
+    <input type="number" name="offset" min="1">
+  </form>
+  
+  <p>Inserta tu mensaje</p>
+  <input id="mensaje" type="text" name="mensaje">
+  <button>Cifrar</button> <br>
+  
+  <div>
+    <p>El resultado es:</p>
+  </div>
+  
+  
+  <button onclick="controladorPantallas('pantalla-bienvenida')">Volver al Inicio</button> <br>
+  
+  </div>
+  
+  
+  <!-------------Pantalla 3---------------------------->
+  <div id="pantalla-3" class="pantalla">
+  
+  <form>
+    Selecciona el desplazamiento para descifrar tu mensaje
+    <input type="number" name="offset" min="1">
+  </form>
+  
+  <p>Inserta tu mensaje</p>
+  <input id="mensaje" type="text" name="mensaje">
+  <button>Cifrar</button> <br>
+  
+  <div>
+    <p>El resultado es:</p>
+  </div>
+  
+  
+  <button onclick="controladorPantallas('pantalla-bienvenida')">Volver al Inicio</button> <br>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
