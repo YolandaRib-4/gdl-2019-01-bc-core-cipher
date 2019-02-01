@@ -7,10 +7,11 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+     
 
 
       
+
 <!-------------Pantalla 1---------------------------->
 <div id="pantalla-bienvenida" class="pantalla">
   <h1>Bienvenida,</h1>
@@ -30,15 +31,15 @@
   
   <form>
     Selecciona el desplazamiento para cifrar tu mensaje
-    <input type="number" name="offset" min="1">
+    <input id="offset" type="number" min="1">
   </form>
   
   <p>Inserta tu mensaje</p>
-  <input id="mensaje" type="text" name="mensaje">
-  <button>Cifrar</button> <br>
+  <input id="mensaje" type="text">
+  <button onclick="input()">Cifrar</button> <br>
   
   <div>
-    <p>El resultado es:</p>
+    <p>El resultado es:<span id="imprimir"></span></p>
   </div>
   
   
@@ -52,22 +53,25 @@
   
   <form>
     Selecciona el desplazamiento para descifrar tu mensaje
-    <input type="number" name="offset" min="1">
+    <input id="offset" type="number" min="1">
   </form>
   
   <p>Inserta tu mensaje</p>
-  <input id="mensaje" type="text" name="mensaje">
-  <button>Cifrar</button> <br>
+  <input id="mensaje" type="text">
+  <button onclick="input()">Cifrar</button> <br>
   
   <div>
     <p>El resultado es:</p>
   </div>
   
   
-  <button onclick="controladorPantallas('pantalla-bienvenida')">Volver al Inicio</button> <br>
+  <button onclick="controladorPantallas('pantalla-bienvenida')">Volver al Inicio</button>
   
   </div>
+    
   
+  
+    
   
   
   
