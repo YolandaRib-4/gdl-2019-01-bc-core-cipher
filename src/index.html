@@ -36,7 +36,7 @@
   
   <p>Inserta tu mensaje</p>
   <input id="mensaje" type="text">
-  <button onclick="input()">Cifrar</button> <br>
+  <button onclick="encode()">Cifrar</button> <br>
   
   <div>
     <p>El resultado es:<span id="imprimir"></span></p>
@@ -53,15 +53,15 @@
   
   <form>
     Selecciona el desplazamiento para descifrar tu mensaje
-    <input id="offset" type="number" min="1">
+    <input id="offset-negativo" type="number" min="1">
   </form>
   
   <p>Inserta tu mensaje</p>
-  <input id="mensaje" type="text">
-  <button onclick="input()">Cifrar</button> <br>
+  <input id="mensaje-descifrar" type="text">
+  <button onclick="decode()">Cifrar</button> <br>
   
   <div>
-    <p>El resultado es:</p>
+    <p>El resultado es:<span id="imprimir-descifrado"></span></p>
   </div>
   
   
