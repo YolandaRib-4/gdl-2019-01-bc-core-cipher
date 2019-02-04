@@ -20,8 +20,8 @@
   
   <p>Para empezar, selecciona si deseas cifrar o descifrar un mensaje.</p>
   
-  <button class="boton" onclick="controladorPantallas('pantalla-2')">Cifrar mensaje</button>
-  <button class="boton" onclick="controladorPantallas('pantalla-3')">Descifrar mensaje</button>
+  <button id="btn-2" class="boton">Cifrar mensaje</button>
+  <button id="btn-3" class="boton">Descifrar mensaje</button>
   </div>
   
   
@@ -36,14 +36,14 @@
   
   <p>Inserta tu mensaje</p>
   <input id="mensaje" type="text">
-  <button onclick="encode()">Cifrar</button> <br>
+  <button id="btn-cifrar">Cifrar</button> <br>
   
   <div>
     <p>El resultado es:<span id="imprimir"></span></p>
   </div>
   
   
-  <button onclick="controladorPantallas('pantalla-bienvenida')">Volver al Inicio</button> <br>
+  <button id="btn-1">Volver al Inicio</button> <br>
   
   </div>
   
@@ -58,7 +58,7 @@
   
   <p>Inserta tu mensaje</p>
   <input id="mensaje-descifrar" type="text">
-  <button onclick="decode()">Cifrar</button> <br>
+  <button id="btn-descifrar">Descifrar</button> <br>
   
   <div>
     <p>El resultado es:<span id="imprimir-descifrado"></span></p>
