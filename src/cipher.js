@@ -1,8 +1,7 @@
 window.cipher = {};
 
 //Funcion ENCRIPTAR
-cipher.encode = (offset, mensaje) => {
-  
+cipher.encode = (offset, mensaje) => { 
     
   let mensajeEncriptado = [];
     
@@ -12,13 +11,11 @@ cipher.encode = (offset, mensaje) => {
    let nuevaletra = String.fromCharCode(nuevaposicion);
    mensajeEncriptado.push(nuevaletra);
   }  
-  return mensajeEncriptado.join('');  
-   
+  return mensajeEncriptado.join(''); 
    };
   
   //Funcion DESCENCRIPTAR
-   cipher.decode = (offset, mensaje) => {
-    
+   cipher.decode = (offset, mensaje) => {    
       
     let mensajeEncriptado = [];
       
@@ -29,5 +26,4 @@ cipher.encode = (offset, mensaje) => {
      mensajeEncriptado.push(nuevaletra);
     }  
     return mensajeEncriptado.join(''); 
-     
      };
