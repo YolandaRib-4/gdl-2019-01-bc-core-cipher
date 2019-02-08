@@ -8,46 +8,39 @@
   <body>
     <div id="root">
 
-
 <!-------------Pantalla 1---------------------------->
 <div id="pantalla-bienvenida" class="pantalla">
-  <h1>Bienvenida,</h1>
+  <h2>Bienvenid@ al encriptador de contraseñas</h2>
+    <p>Puedes crear contraseñas mas seguras a partir de palabras faciles de recordar (ejemplo: nombre de tu perrito) que puedes utilizar en portales web, como tu correo electrónico o tus redes sociales.</p>
+    <p>Para empezar, selecciona si deseas cifrar o descifrar una palabra.</p>
   
-  <p>El cifrado César es uno de los primeros métodos de cifrado conocidos históricamente. Julio César lo usó para enviar órdenes a sus generales en los campos de batalla. Consistía en escribir el mensaje con un alfabeto que estaba formado por las letras del alfabeto normal desplazadas tres posiciones a la derecha. </p>
-  
-  <p>Si quieres saber más acerca del Cifrado Cesar <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Haz click aquí</a> </p>
-  <p>Para empezar, selecciona si deseas cifrar o descifrar un mensaje.</p>
-  
-  <button id="btn-2" class="boton">Cifrar mensaje</button>
-  <button id="btn-3" class="boton">Descifrar mensaje</button>
-  </div>
-    
-  <!-------------Pantalla 2---------------------------->
-  
-  <div id="pantalla-2" class="pantalla">
-  
+  <button id="btn-2" class="boton">Cifrar Contraseña</button>
+  <button id="btn-3" class="boton">Descifrar Contraseña</button>
+</div>
+
+<!-------------Pantalla 2---------------------------->  
+<div id="pantalla-2" class="pantalla">  
   <form>
-    Selecciona el desplazamiento para cifrar tu mensaje
+    Selecciona el desplazamiento para cifrar
     <input id="offset" type="number" min="1">
   </form>
   
-  <p>Inserta tu mensaje</p>
+  <p>Inserta tu Palabra clave</p>
   <input id="mensaje" type="text">
   <button id="btn-cifrar" class="boton">Cifrar</button> 
   
   <div>
-    <p>El resultado es:<span id="imprimir"></span></p>
+    <p>El resultado es: <span id="imprimir"></span></p>
   </div>
     
   <button id="btn-1" class="boton">Volver al Inicio</button> <br>  
-  </div>
+</div>
   
   
-  <!-------------Pantalla 3---------------------------->
-  <div id="pantalla-3" class="pantalla">
-  
+<!-------------Pantalla 3---------------------------->
+<div id="pantalla-3" class="pantalla">  
   <form>
-    Selecciona el desplazamiento para descifrar tu mensaje
+    Selecciona el desplazamiento para descifrar
     <input id="offset-negativo" type="number" min="1">
   </form>
   
@@ -56,12 +49,11 @@
   <button id="btn-descifrar" class="boton">Descifrar</button> <br>
   
   <div>
-    <p>El resultado es:<span id="imprimir-descifrado"></span></p>
+    <p>El resultado es: <span id="imprimir-descifrado"></span></p>
   </div>
   
-  <button id="btn-4" class="boton">Volver al Inicio</button>
-  
-  </div>
+  <button id="btn-4" class="boton">Volver al Inicio</button>  
+</div>
 
     </div>
     <script src="cipher.js"></script>
