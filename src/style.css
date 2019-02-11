@@ -1,6 +1,6 @@
 
 .pantalla{
-  display:none;
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,6 +9,9 @@
   color: black;
   background-color: #B7F3D9; 
   border-radius: 15px;
+  height: 60%;
+  width: 500px;
+  box-sizing: border-box; /*los 500 que le pongo ya consideran el padding y las demas medidas, sin border box suma*/
   }
 
 body{
@@ -35,4 +38,9 @@ input{
 }
 p{
   text-align: justify;
+}
+
+#botones-principales, #btn-1, #btn-4{ 
+  position: absolute;
+  bottom: 35px;
 }
