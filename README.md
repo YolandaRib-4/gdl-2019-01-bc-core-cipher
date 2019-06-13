@@ -1,6 +1,6 @@
 ## Definición del producto
 
-###Encriptador de contraseñas para internet.
+### Encriptador de contraseñas para internet.
 
 Dirigido a cualquier persona que haga uso de internet donde se emplee una contraseña.
 La principal usabilidad de la WebApp es crear una contraseña más seguras a partir de una palabra, fecha, un recuerdo,  que resulte sencilla de recordar para ti, como el nombre de tu gatito, perrito, una frase como por ejemplo “un dia vi una vaca vestida de uniforme” la aplicación te permitirá cifrar estas palabras sencillas y crear una contraseña más segura que puedes utilizar en portales web, como tu correo electrónico, tus redes sociales, e.t.c.
